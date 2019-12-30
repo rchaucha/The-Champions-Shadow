@@ -1,0 +1,63 @@
+game_presentation:         \\\\\\\\The Champions' Shadow////////\nPLAY (1)\nSETTINGS (2)\nQUIT (3)\n\nPlease type the number corresponding to the action to make.
+choose_character:Please, choose a character :\nWarrior (1)\nCleric (2)
+choose_a_correct_number:Please, enter a correct number.
+choose_pseudo:Which pseudonym woud you like to use ? (type 'auto' if you're not inspired)
+character_chosen:You've chosen %s %s
+ennemy_chosen:You'll fight against %s %s
+display_life_point:There are %i life points remaining to %s.
+choose_attack:Please, choose an attack :
+attack_unusable:(UNUSABLE)
+attack_missed:The attack misses!
+evade:%s evade the attack!
+attack_blocked:%s block the attack!
+attack_failed1:%s slipped and his attack fails!
+attack_failed2:%s is distracted and fail his attack!
+attack_weakened1:%s tries to evade but the attack touch him anyway!However, it's weakened.
+attack_weakened2:%s tries to deflect the attack but take some damages.it's weakened.
+attack_weakened3:%s wants to block the attack, but its power makes him tooter!However, the attack is weakened.
+critical_hit1:%s is hitten really hard!Critical hit!
+critical_hit2:%s didn't see the attack coming! Critical hit!
+critical_hit3:The attack's power is devastating!Critical hit!
+no_damage:%s's life stay intact.
+stun_render:%s is stunned, and won't be able to attack for a while!
+exhausted_render:%s is exhausted by this attack, and won't be able to attack for a whileS!
+immobilized_render:%s is immobilized and can't attack.
+unattainable_render:%s is unattainable and can't be reached.
+unstrenght_render:%s is weakened, and his attack power decrease!
+unprecision_render:%s is destabilized, and his precision decrease !
+undefense_render:The %s's protection is weakened, and his precision decrease!
+unevade_render:%s is slowed, and his ability to evade decrease!
+regen_render:%s is circled by a magical aura, and see his life refilling!
+strenght_render:%s feels his desire for fight increasing along with his attack power!
+defense_render:%s see his armor strengthening. His defense increase!
+precision_render:The %s's sight sharpen, and decrease his chances to miss his target!
+evade_render:%s focus all his attention on his enemy, and anticipate more easily his moves to avoid them!
+cant_attack_render:%s is unable to attack!
+effect_level_render:Effect level: %i.
+life_points_lost:%s loose %i life points!
+life_points_healed:%s healed %i life points!
+no_more_life_points:%s has no more life points !
+you_win:You win the fight!
+you_loose:You loose the fight!
+too_exhausted_to_attack:%s is too exhausted to attack.
+warrior_name:the Warrior
+cleric_name:the Cleric
+play:Play
+settings:Settings
+miss_turn:Do nothing.
+turn_missed_render:%s patiently waits %s's attack.
+attack_action_render:%s uses %s!
+mortal_hit_name:Mortal Hit
+defense_breaker_name:Defense-Breaker
+provocation_name:Provocation
+mental_hurt_name:Mental Hurt
+dark_matter_name:Dark Matter
+fourth_dimension_name:Fouth Dimension
+first_aid_name:First Aid
+mortal_hit_description:Devastating hit but needing a one-round break.
+defense_breaker_description:Not really strong attack, but decrease the ennemy defense.
+provocation_description:Greatly decrease ennemy precision but increase his attack power.
+mental_hurt_description:Basic attack.
+dark_matter_description:Your target is circled by invisible matter which decrease is ability to evade for 2 or 3 rounds, and inflict him a few damages (cumulable).
+fourth_dimension_description:Your target is stuck in a parallel dimension, and can't attack and neither be attacked for 1 or 2 rounds.
+fisrt_aid_description:You heal yourself and regen 2 to 5 life points.

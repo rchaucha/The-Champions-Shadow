@@ -1,0 +1,65 @@
+game_presentation:         \\\\\\\\The Champions' Shadow////////\nJOUER (1)\nPARAMETRES (2)\nQUITTER (3)\n\nVeuillez entrer le chiffre de l'action que vous souhaitez effectuer.
+choose_character:Veuillez choisir un personnage :\nGuerrier(1)\nPretre(2)
+choose_a_correct_number:Veuillez entrer un nombre correct.
+choose_pseudo:Quel sera votre pseudo ? (tapez 'auto' si vous n'etes pas inspire)
+character_chosen:Vous avez choisi %s %s
+ennemy_chosen:Vous combattrez contre %s %s
+display_life_point:Il reste %i points de vie a %s.
+choose_attack:Veuillez choisir une attaque :
+attack_unusable:(INUTILISABLE)
+attack_missed:L'attaque rate!
+evade:%s esquive l'attaque!
+attack_blocked:%s pare l'attaque!
+attack_failed1:%s glisse et son attaque rate!
+attack_failed2:%s est deconcentre et rate son attaque!
+attack_weakened1:%s tente d'esquiver mais l'attaque l'atteint tout de meme! Elle est cependant affaiblie.
+attack_weakened2:%s tente de devier l'attaque mais subit quelques degats. L'attaque est affaiblie.
+attack_weakened3:%s veut parer l'attaque mais la puissance de l'attaque le fait vaciller!L'attaque est cependant affaiblie.
+critical_hit1:%s est frappe de plein fouet!Coup critique!
+critical_hit2:%s n'a pas vu venir l'attaque!Coup critique!
+critical_hit3:La puissance de l'attaque est devastatrice! Coup critique!
+no_damage:La vie de %s reste intacte.
+stun_render:%s est etourdi, et ne pourra plus attaquer!
+exhausted_render:%s est epuise par l'attaque qu'il vient de faire, et ne pourra plus attaquer!
+immobilized_render:%s est immobilise, et ne peut pas attaquer!
+unattainable_render:%s est inaccessible et ne peut pas etre touche!
+unstrenght_render:%s est affaibli, et sa puissance d'attaque diminue!
+unprecision_render:%s est destabilise, et sa precision diminue!
+undefense_render:La protection de %s est touchee, et sa defense baisse!
+imprecision_render:%s est destabilise, et sa precision diminue!
+waning_render:La protection de %s est touchee, et sa defense baisse!
+unevade_render:%s est ralenti, et sa capacite a eviter les attaques diminue!
+regen_render:%s est entoure d'un aura magique, et voit sa vie remonter!
+strenght_render:%s sent son envie de combat augmenter, et sa puissance d'attaque avec!
+defense_render:%s voit son armure s'ameliorer, et devient plus resistant!
+precision_render:La vue de %s s'aiguise et reduit ses chances de rater sa cible!
+evade_render:%s se concentre sur %s et anticipe plus facilement ses mouvements pour les eviter!
+cant_attack_render:%s ne peut pas attaquer!
+effect_level_render:Niveau de l'effet: %i.
+life_points_lost:%s a perdu %i points de vie!
+life_points_healed:%s a gagne %i points de vie!
+no_more_life_points:%s n'a plus de point de vie!
+you_win:Vous gagnez donc le combat!
+you_loose:Vous perdez donc le combat!
+too_exhausted_to_attack:%s est trop fatigue pour attaquer.
+warrior_name:le Guerrier
+cleric_name:le Pretre
+play:Jouer
+settings:Parametres
+miss_turn:Ne rien faire
+attack_action_render:%s utilise %s!
+turn_missed_render:%s attend patiemment l'attaque de %s.
+mortal_hit_name:Frappe Mortelle
+defense_breaker_name:Brise - Defense
+provocation_name:Provocation
+mental_hurt_name:Souffrance Mentale
+dark_matter_name:Matiere Noire
+fourth_dimension_name:Quatrieme dimension
+first_aid_name:Premiers Secours
+mortal_hit_description:Frappe devastatrice mais necessitant un tour de repos.
+defense_breaker_description:Attaque peu puissance mais qui fait baisser durablement la defense adverse.
+provocation_description:Fait grandement baisser la precision adverse mais augmente son attaque.
+mental_hurt_description:Attaque classique.
+dark_matter_description:Votre adversaire est entoure de matiere invisible ce qui baisse sa precision et sa capacite a esquiver pendant 2 a 3 tours en plus de lui infliger quelques degats(cumulable).
+fourth_dimension_description:Votre adversaire est coince dans une dimension parallele, et ne peut pas attaquer ni etre attaque pendant 1 a 2 tours.
+first_aid_description:Vous vous soignez et regagnez entre 2 et 5 points de vie.

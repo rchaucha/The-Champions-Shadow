@@ -1,0 +1,16 @@
+﻿Build started 27/07/2016 17:38:41.
+     1>Project "F:\Informatique\Programmation\C++\TheChampionsShadow\source\Attacks\Warrior\AttaqueWarrior\AttaqueWarrior\AttaqueWarrior.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Informatique\Programmation\C++\TheChampionsShadow\source\Attacks\Warrior\AttaqueWarrior\Debug\AttaqueWarrior.dll" /INCREMENTAL /NOLOGO /LIBPATH:"../../../*" /LIBPATH:"../../../../*" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Informatique\Programmation\C++\TheChampionsShadow\source\Attacks\Warrior\AttaqueWarrior\Debug\AttaqueWarrior.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Informatique\Programmation\C++\TheChampionsShadow\source\Attacks\Warrior\AttaqueWarrior\Debug\AttaqueWarrior.lib" /MACHINE:X86 /DLL Debug\AttaqueWarrior.obj
+         Debug\dllmain.obj
+         Debug\stdafx.obj
+     1>AttaqueWarrior.obj : error LNK2019: unresolved external symbol "public: __thiscall AbstractDamageAttack::AbstractDamageAttack(void)" (??0AbstractDamageAttack@@QAE@XZ) referenced in function "public: __thiscall AttaqueWarrior::AttaqueWarrior(void)" (??0AttaqueWarrior@@QAE@XZ)
+     1>AttaqueWarrior.obj : error LNK2019: unresolved external symbol "protected: unsigned int __thiscall AbstractDamageAttack::_attack(class Character *,class Character *,unsigned int,unsigned int,int)" (?_attack@AbstractDamageAttack@@IAEIPAVCharacter@@0IIH@Z) referenced in function "public: void __thiscall AttaqueWarrior::attack(class Character *,class Character *)" (?attack@AttaqueWarrior@@QAEXPAVCharacter@@0@Z)
+     1>AttaqueWarrior.obj : error LNK2019: unresolved external symbol "public: __thiscall AbstractEffectAttack::AbstractEffectAttack(void)" (??0AbstractEffectAttack@@QAE@XZ) referenced in function "public: __thiscall AttaqueWarrior::AttaqueWarrior(void)" (??0AttaqueWarrior@@QAE@XZ)
+     1>AttaqueWarrior.obj : error LNK2019: unresolved external symbol "protected: void __thiscall AbstractEffectAttack::_addEffect(class Character *,class Character *,enum Effect::EffectType,unsigned short,bool,unsigned int)" (?_addEffect@AbstractEffectAttack@@IAEXPAVCharacter@@0W4EffectType@Effect@@G_NI@Z) referenced in function "public: void __thiscall AttaqueWarrior::attack(class Character *,class Character *)" (?attack@AttaqueWarrior@@QAEXPAVCharacter@@0@Z)
+     1>F:\Informatique\Programmation\C++\TheChampionsShadow\source\Attacks\Warrior\AttaqueWarrior\Debug\AttaqueWarrior.dll : fatal error LNK1120: 4 unresolved externals
+     1>Done Building Project "F:\Informatique\Programmation\C++\TheChampionsShadow\source\Attacks\Warrior\AttaqueWarrior\AttaqueWarrior\AttaqueWarrior.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.13

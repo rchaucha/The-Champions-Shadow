@@ -1,0 +1,50 @@
+BUGS:
+{
+	Les messages peuvent dépasser de la box si ils contiennent des \n
+	Revoir le systeme d'id pour les anims (le draw dessine alphabetiquement)
+}
+
+COURT TERME:
+{
+	SortedMap
+	Ajouter les descriptions des attaques
+	Vérifier la const-correctness des méthodes
+	Déplacer les clean d'anims/sprite/text dans la fonction précedente (+ logique)
+	Settings: ajouter FPS pour le mode image
+	Changer les spé (attaque, def, ...) sur 100, et diviser / 100 pour les attaques + modifier les attaques // Brise-defense pour enlever des % de spé
+	Son pour 2D
+	Différentes langues pour 2D
+}
+
+LONG TERME:
+{
+	Utiliser le polymorphisme pour les versions et supprimer VersionManager
+	Faire en sorte que l'on charge les classes grâce à des DLL
+	Améliorer l'ia
+	sauvegarder les données ?
+	créer un test pour vérifier qu'il n'y ait pas 2 fois le même id dans les fichiers langues
+	2D : faire WindowSettings (struct dans Settings)
+	multi-joueur
+}
+
+FAIT:
+{
+	Ajout du mana
+	Ajout d'un coefficient variable pour les dégâts
+	Création de temps d'attente pour les messages
+		Surcharge de Sleep(int) pour modifier le coef d'attente dans les paramètres
+	Un message s'affiche pour donner le nom de l'attaque utilsée
+	Si l'utilisateur entre un pseudo avec espaces, les remplacer par des _ + taper entrée au lieu de 'auto' pour random pseudo
+	Faire en sorte que les 2 pseudo ne puissent pas être les mêmes
+	Modifier les IA pour qu'elles ne choisissent que les attaques disponibles
+		Création de Character::_getUsableAttacks()
+	Faire une classe par effet et les rendre totalement modulaires
+	Création d'un outils pour convertir un fichier en code
+	Ajout de 4e dimension et Premiers Secours au Prêtre
+}
+
+MÉMO:
+{
+	XML données :https://shilohjames.wordpress.com/2014/04/27/tinyxml2-tutorial/
+	Générateur de pseudo : http://www.gunof.net/
+}

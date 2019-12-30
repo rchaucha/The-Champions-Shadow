@@ -1,0 +1,3 @@
+mode:pictures
+lang:fr
+reading_speed_coef:1

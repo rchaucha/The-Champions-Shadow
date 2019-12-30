@@ -1,0 +1,2 @@
+"mode:text\n" <<
+"lang:en";
