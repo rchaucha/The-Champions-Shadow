@@ -9,6 +9,7 @@
 #include "LangManager.h"
 #include "Settings.h"
 #include "2DEntity.h"
+#include "AtomicMapStrToT.h"
 
 class Character;
 class Thread;
@@ -83,8 +84,8 @@ private:
 
   std::map<std::string, sf::Texture> _textures_buffer;
   std::map<std::string, sf::Font> _fonts_buffer;
-  std::map<std::string, sf::Sprite> _sprites_to_draw;
-  std::map<std::string, sf::Text> _texts_to_draw;
+  AtomicMapStrToT<sf::Sprite> _sprites_to_draw;
+  AtomicMapStrToT<sf::Text> _texts_to_draw;
 
   std::string const _pictures_file_path;
   sf::RenderWindow* _window;
@@ -96,7 +97,6 @@ private:
   sf::Sprite _background;
 
   sf::Thread* _draw_thread;
-  sf::Mutex* _mutex;
 };
 
 #endif

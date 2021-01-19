@@ -88,6 +88,9 @@ string TextVersion::choosePseudo()
 	if (pseudo != "")
 		printf("\n");
 
+	if (pseudo == "auto")
+		pseudo = "";
+
 	return pseudo;
 }
 

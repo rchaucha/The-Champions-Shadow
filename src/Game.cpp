@@ -2,6 +2,7 @@
 
 #include <time.h>
 #include <memory>
+#include <filesystem>
 #include <Windows.h>
 #include "Character.h"
 #include "AbstractVersion.h"
@@ -55,11 +56,11 @@ void Game::launch()
 
 		ShellExecute(NULL, L"open", stringToWstring(settings_path).c_str(), NULL, NULL, SW_SHOWDEFAULT);
 
-		return; break;
+		return;
 	}
 	case AbstractVersion::MenuChoice::Quit:
 		_is_game_closed = true;
-		return; break;
+		return;
 	default:
 		break;
 	}
@@ -163,16 +164,9 @@ void Game::_aiDead()
 
 string Game::getFilesPath() const
 {
-	HMODULE hModule = GetModuleHandleW(NULL);
-	WCHAR path[MAX_PATH];
-	GetModuleFileNameW(hModule, path, MAX_PATH);
-	wstring ws(path);
-	string str(ws.begin(), ws.end());
+	string files_dir = filesystem::current_path().parent_path().parent_path().u8string() + "/files";
 
-	str = str.substr(0,str.size() - 70);         //on revient au dossier du projet
-	str += "files";
-
-	return str;
+	return files_dir;
 }
 
 std::wstring Game::stringToWstring(const std::string & s) const
