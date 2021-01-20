@@ -63,12 +63,28 @@ _draw_thread(new sf::Thread(&PicVersion::_draw, this))
 
 PicVersion::~PicVersion()
 {
+   _animationsCleaner();
+
    _window->close();
 
    _draw_thread->wait();
+   delete _draw_thread;
+   _draw_thread = nullptr;
 
    delete _window;
    _window = nullptr;
+
+   delete _warrior_entity;
+   _warrior_entity = nullptr;
+
+   delete _cleric_entity;
+   _cleric_entity = nullptr;
+
+   delete _player_entity;
+   _player_entity = nullptr;
+
+   delete _enemy_entity;
+   _enemy_entity = nullptr;
 }
 
 AbstractVersion::MenuChoice PicVersion::displayMenu()
@@ -986,10 +1002,14 @@ void PicVersion::_printToTextBox(string str)
    _texts_to_draw.getWhenLocked("text_box").setString(str);
    _texts_to_draw.unlock();
 
-   float text_left_pos = _texts_to_draw.get("text_box").getGlobalBounds().left,
-      text_width = _texts_to_draw.get("text_box").getGlobalBounds().width,
-      box_left_pos = _sprites_to_draw.get("text_box").getGlobalBounds().left,
-      box_width = _sprites_to_draw.get("text_box").getGlobalBounds().width;
+   _texts_to_draw.lock();
+   auto text_box_bounds = _texts_to_draw.getWhenLocked("text_box").getGlobalBounds();
+   _texts_to_draw.unlock();
+
+   float text_left_pos = text_box_bounds.left,
+      text_width = text_box_bounds.width,
+      box_left_pos = text_box_bounds.left,
+      box_width = text_box_bounds.width;
 
    float ratio = (box_width - (text_left_pos - box_left_pos) - 100) / text_width;
 
@@ -1085,7 +1105,7 @@ void PicVersion::_switchBoxDialog()
    while (text_box.getScale().y > 0.3f)
    {
       text_box.setScale(text_box.getScale().x, text_box.getScale().y - 0.4f);
-      Sleep(50);
+      Sleep(20);
    }
 
    text_box.setTextureRect(IntRect(0, top, 190, 45));
@@ -1093,7 +1113,7 @@ void PicVersion::_switchBoxDialog()
    while (text_box.getScale().y < 4.7f)
    {
       text_box.setScale(text_box.getScale().x, text_box.getScale().y + 0.4f);
-      Sleep(50);
+      Sleep(20);
    }
 }
 
